@@ -1,0 +1,483 @@
+.main-catalog-list .d-lg-block {
+    overflow: hidden;
+}
+
+
+
+@media (min-width: 1150px) {
+    .flats__items {
+        padding-right: 30px;
+        height: 90vh;
+        overflow-y: auto;
+        margin-right: -40px;
+    }
+
+    .flats__items::-webkit-scrollbar {
+        width: 10px;
+        background-color: #fff;
+        border: 1px solid #bf9474;
+    }
+
+    .flats__items::-webkit-scrollbar-thumb {
+        background-color: #bf9474;
+        cursor: pointer;
+    }
+}
+
+
+.flats__items-sort{
+    margin-top: -34px;
+    font-family: Raleway;
+    font-size: 12px;
+    color: #bf9474;
+}
+
+@media (max-width: 1500px) {
+    .flats__item-booked {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .flats__item-booked {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 1150px) {
+    .flats__items-sort{
+        display: none;
+    }
+}
+
+.flats__items .row{
+    font-size: 18px;
+}
+@media (max-width: 1150px) {
+    .flats__items .row{
+        font-size: 16px;
+    }
+}
+
+.flats__item{
+    border: 1px solid #dcd1c8;
+    background: #fff;
+    position: relative;
+    font-family: Raleway;
+}
+.flats__item:hover{
+    box-shadow: 0 0 10px 0px #888;
+}
+.flats__item a{
+    font-family: Raleway;
+}
+
+
+.flats__item .col-1 > div,
+.flats__item .col-2 > div
+{
+    font-size: 18px;
+}
+.flats__item .col-1 > div small,
+.flats__item .col-2 > div small{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.flats__item-rooms{
+    padding: 3px 5px 3px 18px;
+    width: 90px;
+}
+
+
+
+@media (min-width: 1150px) {
+    .flats__item .border-right {
+        border: none !important;
+    }
+}
+@media (max-width: 1400px) {
+    .flats__item-rooms {
+        width: 60px;
+    }
+}
+@media (max-width: 1150px) {
+    .flats__item-rooms{
+        padding: 0 0 0 15px;
+        width: 60px;
+    }
+    .flats__item .border-right{
+        border-color: #bf9474!important;
+    }
+    .flats__item  .flats__double-column{
+        color: #bf9474;
+    }
+}
+
+
+
+
+
+.flats__item-type > div,
+.flats__item small{
+    font-size: 12px;
+}
+
+.flats__item-rooms-square{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: #22515F;
+    color: #fff;
+    position: relative;
+    display: flex;
+}
+
+.flats__item-rooms-square div {
+    font-size: 4rem;
+    line-height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.flats__item-rooms-square div span{
+    display: block;
+    font-size: 3rem;
+}
+.flats__item-rooms-square div small{
+    display: block;
+    font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+    .flats__item-rooms-square div span {
+        font-size: 2rem;
+        margin-top: 0 !important;
+    }
+    .main-catalog-list .col-lg-1 {
+        flex: 0 0 6.333333%;
+        max-width: 6.333333%;
+    }
+
+    .main-catalog-list .d-lg-block {
+        max-width: 100px;
+    }
+
+    .main-catalog-list .col-lg-2 {
+        flex: 0 0 14.666667%;
+        max-width: 14.666667%;
+    }
+
+    .main-catalog-list .col-lg-1 {
+        flex: 0 0 8%;
+        max-width: none;
+        width: 8%;
+        min-width: auto;
+    }
+    .main-catalog-list .col-lg-2 {
+        flex: 0 0 12.666667%;
+        max-width: 12.666667%;
+    }
+}
+@media (max-width: 1300px) {
+    .col-lg-3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .flats__item-rooms-square div {
+        line-height: 1.5rem;
+    }
+    .flats__item-rooms-square div span{
+        display: block;
+        font-size: 18px;
+    }
+    .flats__item-rooms-square div small{
+        display: block;
+        font-size: 8px;
+    }
+}
+
+
+.flats__item-labels{
+    margin-right: 15px;
+}
+@media (max-width: 1150px) {
+    .flats__item-labels{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+        height: 100%;
+    }
+    .flats__item:hover {
+        box-shadow: none;
+    }
+}
+
+.flats__item-favorite{
+    padding-right: 20px;
+}
+@media (max-width: 1400px) {
+    .flats__item-favorite{
+        padding-right: 10px;
+    }
+}
+.flats__item-show-detail{
+    width: 73px;
+    background: #ccc;
+}
+@media (max-width: 1400px) {
+    .flats__item-show-detail {
+        width: 60px;
+    }
+}
+
+.flats__item-show-detail.active{
+    background: #22515f;
+}
+.flats__item-show-detail svg{
+    stroke: #22515F;
+}
+.flats__item-show-detail.active svg{
+    stroke: #bf9474;
+}
+
+
+
+
+
+
+.flats__container .btn{
+    background: #22515f;
+    box-shadow: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    padding: .5rem 3rem;
+    white-space: nowrap;
+}
+.flats__container .btn:hover{
+    background: #bf9474;
+}
+.flats__container .red-icon{
+    color:#a50014;
+}
+
+
+
+.flats__item-detail .btn{
+    background: #22515f;
+    box-shadow: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    white-space: nowrap;
+}
+.flats__item-detail .btn:hover{
+    background: #bf9474;
+}
+
+
+
+.flats__item .flats__item-favorite svg,
+.flats__item .flats__item-detail-favorite svg
+{
+    stroke: #22515F;
+    fill: none;
+}
+.flats__item .flats__item-favorite svg:hover,
+.flats__item .flats__item-detail-favorite svg:hover
+{
+    stroke: #22515F;
+    fill: #22515F;
+}
+.flats__item  .flats__item-favorite svg.red-icon,
+.flats__item  .flats__item-detail-favorite svg.red-icon
+{
+    stroke: #a50014;
+    fill: #a50014;
+}
+
+
+
+
+.flats__item-info{
+    display: flex;
+    flex: 1;
+    font-family: Raleway;
+}
+.flats__item-info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.flats__item-info__prices li{
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #bf9474;
+}
+.flats__item-info__prices li:not(:last-child){
+    border-right: 1px solid #bf9474;
+}
+.flats__item-info__features li{
+    font-size: 12px;
+    padding: 0 .5rem;
+}
+.flats__item-info ul .list-circles{
+    border: 1px solid #22515F;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin: 4px 0;
+    padding: 0;
+}
+.flats__item-info_center-line{
+    line-height: 46px;
+}
+.flats__item-booked{
+    text-align: left;
+    color: #bf9474;
+}
+
+/*================================*/
+.flats__item-detail{
+    border: 1px solid #bf9474;
+    background: #eee;
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: 73px;
+    z-index: 10;
+    display: none;
+}
+
+.flats__item-detail:hover{
+    box-shadow: 0 0 10px 0px #888;
+}
+.flats__item-detail-container{
+}
+.flats__item-detail-labels{
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 80px;
+}
+.flats__item-detail-labels .flats__item-detail-labels-square{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: #22515F;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.25rem;
+}
+.flats__item-detail-labels .flats__item-detail-labels-square div{
+    font-size: 36px;
+    line-height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.flats__item-detail-labels .flats__item-detail-labels-square div small{
+    font-size: 14px;
+}
+
+.flats__item-detail-favorite{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    display: flex;
+    margin-right: 20px;
+    height: 75px;
+}
+.flats__item-detail-favorite a{
+    margin: auto;
+}
+
+
+
+.flats__item-detail-img{
+    padding: 4rem 3rem 1.5rem;
+    display: flex;
+    height: 66.666%;
+}
+.flats__item-detail-img img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.flats__item-detail-info{
+    font-family: Raleway;
+    padding: 3rem 7rem;
+    font-size: 24px;
+}
+.flats__item-detail-info_header{
+}
+.flats__item-detail-info .flats__item-detail-info__features{
+    flex: 2;
+}
+.flats__item-detail-info .flats__item-detail-info__btn{
+    flex: 1;
+}
+
+.flats__item-detail-info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    margin-left: -40px;
+}
+.flats__item-detail-info__features-list li{
+    font-size: 24px;
+    padding: 0 1.5rem;
+    text-align: center;
+    color: #bf9474;
+    flex: 1;
+}
+.flats__item-detail-info__features-list li:not(:last-child){
+    border-right: 1px solid #bf9474;
+}
+.flats__item-detail-info__features li{
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+
+
+
+
+/*=============================*/
+
+

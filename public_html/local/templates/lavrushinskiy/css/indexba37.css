@@ -1,0 +1,70 @@
+#decor .swiper-wrapper,
+#arch_slider .swiper-wrapper,
+.mobile_section .swiper-wrapper{
+    position: relative;
+}
+#decor .swiper-button-prev,
+#arch_slider .swiper-button-prev,
+.mobile_section .swiper-button-prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(90deg);
+    z-index: 50;
+    cursor: pointer;
+    width: 50px;
+}
+
+#decor .swiper-button-next,
+#arch_slider .swiper-button-next,
+.mobile_section .swiper-button-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(270deg);
+    z-index: 50;
+    cursor: pointer;
+    width: 50px;
+}
+
+@media (max-width: 767.98px){
+    #decor .swiper-button-prev,
+    #arch_slider .swiper-button-prev,
+    .mobile_section .swiper-button-prev,
+    #decor .swiper-button-next,
+    #arch_slider .swiper-button-next,
+    .mobile_section .swiper-button-next{
+        width: 30px;
+    }
+}
+
+.row.mobile_section{
+	margin-bottom: -5px;
+}
+
+@media (max-width: 767.98px){
+.gallery-left,
+.album,
+.only_pc {
+    display: none;
+}
+
+.documents .row{
+	flex-direction: column;
+	padding-bottom: 40px;
+}
+
+.documents .col{
+	flex-basis: 100%;
+	margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 767.98px){
+.mobile_section,
+.only_mob {
+    display: none;
+}
+
+}

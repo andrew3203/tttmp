@@ -1,0 +1,658 @@
+/* CALCULATOR */
+
+.mortgage__block{
+    width: 100%;
+    box-shadow: 0 0 10px 0px #888;
+    background: #f0f0f0;
+    padding: 5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+
+@media (max-width: 1023px) {
+    .mortgage__block {
+        box-shadow: none;
+    }
+}
+.mortgage__block *:not(i){
+    font-family: Raleway;
+
+}
+.mortgage-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.calculator-wrap {
+}
+
+.calculator-wrap .page-common-intro {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+
+.calculator-wrap label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.page-common-h{
+    font-size: 36px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.checkbox_program {
+    margin-right: 10px;
+}
+
+.program-wrap {
+    margin-bottom: 40px;
+}
+
+/*slider */
+
+.ui-widget-header {
+    background-color: #bf9474;
+    height: 3px !important;
+    margin-top: -1px;
+}
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active,
+.ui-widget.ui-widget-content {
+    border: none;
+    background: #22515f;
+    font-weight: normal;
+    color: #22515f;
+}
+.ui-slider .ui-slider-handle {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #bf9474;
+    cursor: pointer;
+}
+.ui-slider-horizontal .ui-slider-handle{
+    top: -.35em;
+}
+
+.ui-slider-horizontal {
+    height: 1px;
+}
+
+.slider-amount {
+    border: none;
+    font-size: 24px;
+    font-weight: normal;
+    color: #22515f;
+    background: #f0f0f0;
+}
+
+.slider-amount::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #22515f;
+    opacity: 1; /* Firefox */
+}
+
+.slider-amount:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #22515f;
+}
+
+.slider-amount::-ms-input-placeholder { /* Microsoft Edge */
+    color: #22515f;
+}
+
+.range-slider {
+    margin: 10px 0px 5px 0;
+}
+
+.ui-state-focus {
+    border: none;
+    outline: 0;
+}
+
+.credit-param-wrap {
+    margin-bottom: 1rem;
+}
+.credit-param-wrap p{
+    color: #22515f;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#first-pay-percent {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    color: #bf9474;
+    text-align: right;
+    margin-top: 0;
+}
+
+#first-pay-percent::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bf9474;
+    opacity: 1; /* Firefox */
+}
+
+#first-pay-percent:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bf9474;
+}
+
+#first-pay-percent::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bf9474;
+}
+
+.credit-line {
+    width: 100%;
+    height: 3px;
+    background-color: #bf9474;
+    margin: 3px 0 10px 0;
+}
+
+.credit-param-wrap input {
+    padding-left: 0;
+}
+
+.credit-info {
+    margin-top: 40px;
+    width: 990px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.credit-info h3 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #7a7a7a;
+    border-radius: 0;
+    color: #7a7a7a;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.accordion {
+    margin-top: 40px;
+}
+
+.accordion-section {
+    margin: 0;
+    padding: 0;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width: 100%;
+    display: inline-block;
+    color: #22515f;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bf9474;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    display: none;
+    border-bottom: 1px solid #bf9474;
+}
+
+.close-gab {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    display: none;
+    color: #bf9474;
+}
+
+.open-gab {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    color: #bf9474;
+}
+
+.accordion-section-title {
+    position: relative;
+}
+
+.accordion-section-title.active .open-gab {
+    display: none;
+}
+
+.accordion-section-title.active .close-gab {
+    display: block;
+}
+
+.benefit {
+    display: inline-block;
+    width: 45%;
+    margin-right: 4%;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.benefit strong {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.benefit img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.benefit i {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: #7a7a7a;
+}
+
+.credit-doc {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.credit-doc img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.credit-doc i {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: #7a7a7a;
+}
+
+.credit-actions {
+    margin-top: 4rem;
+}
+
+.credit-calculate.credit-button {
+    display: block;
+    background-color: #efefef;
+    border:1px solid #bf9474;
+    color: #bf9474;
+    text-transform: uppercase;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.credit-actions .credit-button:hover {
+    color: #fff;
+    background-color: #bf9474;
+}
+
+
+.programs-wrap {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 1.5rem;
+    margin-right: -1.5rem;
+}
+
+
+/* width */
+.programs-wrap::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.programs-wrap::-webkit-scrollbar-track {
+    border: 1px solid #bf9474;
+}
+
+/* Handle */
+.programs-wrap::-webkit-scrollbar-thumb {
+    background: #bf9474;
+}
+
+/* Handle on hover */
+.programs-wrap::-webkit-scrollbar-thumb:hover {
+
+}
+
+
+.program-item {
+    padding: 2rem 3rem;
+    margin-bottom: 10px;
+    border: 1px solid #bf9474;
+
+    animation: animateElement linear .3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animateElement {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.bank-info {
+    color: #7a7a7a;
+    font-weight: bold;
+    border-bottom: 1px solid #bf9474;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bank-info img {
+    width: 35px;
+}
+
+.bank-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+}
+
+
+.bank-credit-info {
+    margin-top: 10px;
+}
+
+.bank-credit-info-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+}
+
+
+.credit-info-num {
+    font-size: 18px;
+    color: #bf9474;
+}
+
+.credit-info-title {
+    font-size: 1.2rem;
+
+}
+
+.print-table {
+    display: none;
+}
+
+@media print {
+
+    .page-header, .calculator-wrap, .page-common, .footer {
+        display: none;
+    }
+
+    .page-content {
+        top: 0;
+        overflow: hidden;
+        page-break-after: always;
+    }
+
+    .print-table {
+        display: block;
+        text-align: center;
+    }
+
+    .print-header {
+        margin-top: 30px;
+    }
+
+    .print-header-logo {
+        height: 60px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .print-header-line {
+        width: 210px;
+
+        vertical-align: top;
+        border-bottom: 2px solid #000000;
+        margin: 38px 30px;
+        display: inline-block;
+    }
+
+    .print-info {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 40px 0;
+    }
+
+    .credit-table {
+        width: 100%;
+        border: 1px solid #949494;
+        background-color: #f7f7f7;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .top-row td {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .bottom-row td {
+        padding-bottom: 20px;
+    }
+
+    .credit-row {
+        background-color: #fff;
+    }
+
+    .credit-row td {
+        padding: 20px 0;
+    }
+
+    .flat-price-cell, .first-pay-cell, .credit-amount {
+        width: 25%;
+    }
+
+    .bank-table {
+        width: 100%;
+        -webkit-print-color-adjust: exact;
+        margin-top: 40px;
+    }
+
+    .bank-table tr {
+        border-bottom: 1px solid #949494;
+    }
+
+    .bank-table td {
+        padding: 10px 0;
+        text-align: left;
+    }
+
+}
+
+
+.email-form-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.email-form-back {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.email-form {
+    position: absolute;
+    padding: 40px;
+    background-color: #fff;
+    width: 600px;
+    left: 50%;
+    top: 30%;
+    margin-left: -310px;
+    z-index: 99;
+}
+
+.credit-form-wrap {
+    border-top: 1px solid #999999;
+    margin-top: -1px;
+    padding: 44px 0;
+    position: relative;
+    z-index: 999;
+    width: 995px;
+}
+
+#creditform {
+    margin-top: 20px;
+    width: 510px;
+}
+
+textarea, select, input, button {
+    outline: none;
+}
+
+.creditform .checkbox {
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px 5px 10px 0;
+    width: 14px;
+    height: 14px;
+}
+
+.creditform input {
+    padding: 10px 10px 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    line-height: 14px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.creditform .law {
+    color: #24282b;
+    font-size: 10px;
+    line-height: 14px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin: 11px 0 0 0;
+    width: 245px;
+}
+
+.creditform .law span {
+    background: #F8F8F8;
+    border: 5px solid #DFDFDF;
+    color: #24282b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    position: absolute;
+    margin-top: -360px;
+    margin-left: -157px;
+    width: 400px;
+    display: none;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.creditform .law span:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid #dfdfdf;
+    border-right: 5px solid #dfdfdf;
+    background: #f8f8f8;
+    left: 50%;
+    margin-left: -10px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.creditform .law {
+    position: relative;
+    cursor: pointer;
+}
+
+.creditform .law:hover span {
+    display: block;
+}
+
+
+.creditform button {
+    border: none;
+    background-color: #bf9474;
+    color: #fff;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.creditform button:hover {
+
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.ninja{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1023px) {
+    .mortgage__block{
+        position: relative;
+
+    }
+    .page-common-col-left{
+        margin-bottom: 3rem;
+    }
+}
